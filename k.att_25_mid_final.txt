@@ -1,0 +1,599 @@
+1. Quyidagi qaysi kod to'g'ri kompilyatsiya qilinadi?
+a) int 2x = 5;
+b) int x-y = 10;
+c) *int _x2 = 15;
+d) int x y = 20;
+
+2. Quyidagi kod bajarilgandan keyin x ning qiymati qanday bo'ladi? [ int x = 5; int y = x++; ]
+a) 4
+b) 5
+c) *6
+d) 7
+
+3. char ma'lumot turi qancha xotira egallaydi?
+a) 2 bayt
+b) 4 bayt
+c) *1 bayt
+d) 8 bayt
+
+4. Quyidagi kod nima natija beradi? [ int a = 5, b = 2; double c = a / b; ]
+a) c = 2.5
+b) c = 3.0
+c) *c = 2
+d) c = 2.2
+
+5. Quyidagi qaysi operator to'g'ri e'lon qilingan?
+a) float is x = 3.14;
+b) *double y = 3.14;
+c) int z = 3.14;
+d) Hammasi to'g'ri
+
+6. Quyidagi kod bajarilgandan keyin result ning qiymati qanday? [ int x = 10; int result = ++x; ] 
+a) 10
+b) *11
+c) 12
+d) 9
+
+7. bool ma'lumot turi qaysi qiymatlarni qabul qiladi?
+a) 0 va 1
+b) true va false
+c) Har qanday butun son
+d) *a va b javoblari to'g'ri
+
+8. Quyidagi kod bajarilgandan so'ng a va b ning qiymatlari qanday? [ int a = 5; int b = a; a = 10; ]
+a) *a = 10, b = 5
+b) a = 10, b = 10
+c) a = 5, b = 5
+d) a = 5, b = 10
+
+9. Quyidagi kod bajarilgandan keyin x ning qiymati nima bo'ladi? [ int x = 7; x = x / 2; ]
+a) 3
+b) 4
+c) *3
+d) 3.5
+
+10. Quyidagi qaysi o'zgaruvchi nomi noto'g'ri?
+a) int _name = 5;
+b) int Name123 = 10;
+c) *int for = 15;
+d) int myVar = 20
+
+11. Quyidagi kod bajarilgandan keyin x ning qiymati nima bo'ladi? [ int x = 10; x += 5; x -= 3; ]
+a) 8
+b) 15
+c) *12
+d) 12.0
+
+12. Quyidagi ifodaning natijasi qanday? [ int result = 17 % 5; ]
+a) 2.0
+b) 3.4
+c) *2
+d) 3
+
+13. Quyidagi kod bajarilgandan so'ng a ning qiymati nima? [ int a = 5; a *= 2 + 3; ]
+a) 13
+b) *25
+c) 10
+d) 16
+
+14. Quyidagi ifodaning natijasi qanday bo'ladi? [ double x = 5.0 / 2; ]
+a) 2
+b) 3
+c) 2.0
+d) *2.5
+
+15. Manfiy sonlar bilan amal bajarilganda quyidagi qaysi natija to'g'ri? [ int x = -10; int y = -x; ]
+a) y = -10
+b) *y = 10
+c) y = 0
+d) y = -20
+
+16. Quyidagi kod bajarilgandan keyin result ning qiymati nima? [ int a = 7, b = 3; int result = a / b * b; ]
+a) 7
+b) 9
+c) *6
+d) 2
+
+17. Quyidagi qaysi ifoda xato natija beradi? [ int x = 10; ] 
+a) x /= 2;
+b) x %= 3;
+c) x *= 1.5;
+d) *to'g'ri javob yo'q
+
+18. Quyidagi kod bajarilgandan keyin x ning qiymati qanday? [ float x = 10.0; x /= 4; ]
+a) 2
+b) 2.0
+c) *2.5
+d) 3.0
+
+19. Quyidagi ifodaning natijasi nima? [ int x = 15; x %= 4; ]
+a) 4
+b) 0
+c) *3
+d) 15
+
+20. Quyidagi kod bajarilgandan keyin result ning qiymati qanday? [ int a = -8; int b = 3; int result = a / b; ]
+a) -2
+b) *-2
+c) -3
+d) -2.666
+
+21. Quyidagi funksiya to'g'ri e'lon qilinganmi? [ void printMessage() { cout << "Hello"; } ]
+a) Yo'q, qaytish turi ko'rsatilmagan
+b) *Ha, to'g'ri
+c) Yo'q, parametrlar bo'lishi kerak
+d) Yo'q, funksiya void bo'lishi mumkin emas
+
+22. Quyidagi kod bajarilganda nima natija chiqadi? [ void test() { cout << "A"; } int main() { test(); test(); }
+a) A
+b) *AA
+c) A A
+d) test()test()
+
+23. Funksiya chaqirilganda call stack da nima sodir bo'ladi?
+a) Funksiya o'chiriladi
+b) *Funksiya qo'shiladi
+c) Hech narsa
+d) Dastur tugaydi
+
+24. Quyidagi kod nechta marta "Hello" so'zini chiqaradi? [ void greet() { cout << "Hello"; } int main() { greet(); greet(); greet(); } ]
+a) 1
+b) 2
+c) *3
+d) 0
+
+25. Quyidagi funksiya chaqiruvida xatolik bormi? [ void display(int x) { cout << x; } int main() { display(5, 10); } ]
+a) Yo'q, to'g'ri
+b) ortiqcha argument berilgan
+c) lekin 10 e'tiborga olinmaydi
+d) int emas, float bo'lishi kerak
+
+26. Quyidagi kod bajarilganda qaysi tartibda chiqadi? [ void funcA() { cout << "A"; } void funcB() { cout << "B"; } int main() { funcB(); funcA(); } ]
+a) AB
+b) *BA
+c) A B
+d) Xatolik chiqadi
+
+27. Funksiya ichida boshqa funksiya chaqirish mumkinmi?
+a) faqat main() dan chaqirish mumkin
+b) *har qanday funksiyadan chaqirish mumkin
+c) Faqat void funksiyalarda mumkin
+d) Yo'q, bu xatolik
+
+28. Quyidagi kod bajarilganda call stack qanday ko'rinishda bo'ladi? [ void funcC() { cout << "C"; } void funcB() { funcC(); } void funcA() { funcB(); } int main() { funcA(); } ]
+a) main() -> funcC() -> funcB() -> funcA()
+b) funcA() -> funcB() -> funcC() -> main()
+c) *main() -> funcA() -> funcB() -> funcC()
+d) funcC() -> funcB() -> funcA() -> main()
+
+29. Quyidagi funksiya deklaratsiyasida xatolik bormi? [ void calculate(int, int); ]
+a) *Bu forward declaration va to'g'ri
+b) Ha, parametr nomlari bo'lishi kerak
+c) Ha, void bo'lmasligi kerak
+d) Ha, return turi noto'g'ri
+
+30. Quyidagi kod nima natija chiqaradi? [ void print(int n) { cout << n << " "; } int main() { print(3); print(2); print(1); }
+a) 123
+b) *3 2 1
+c) 1 2 3
+d) 1_2_3
+
+31. Quyidagi kod bajarilganda nima chiqadi? [ int x = 5; if (x > 3) cout << "A"; if (x > 7) cout << "B"; ]
+a) AB
+b) B
+c) *A
+d) Hech narsa
+
+32. Quyidagi switch statementda nima xatolik bor? [ int x = 5; switch (x) { case 5: cout << "Five"; case 6: cout << "Six"; }
+a) Xatolik yo'q
+b) *break operatori yo'q
+c) default kerak
+d) case noto'g'ri berilgan
+
+33. Quyidagi funksiya nima qaytaradi? [ int getMin(int a, int b) { if (a > b) { return a; } return b; } int result = getMin(10, 15); ]
+a) 10
+b) *15
+c) 25
+d) 0
+
+34. Quyidagi kod bajarilganda nima natija chiqadi? [ int x = 10; if (x = 5) { cout << "False"; } else  { cout << "True"; } ] 
+a) False
+b) *True
+c) Xatolik
+d) Hech narsa
+
+35. Switch statementda keltirilgan qaysi ma'lumot turlarini ishlatish mumkin?
+a) float, int
+b) bool, string
+c) *int, char
+d) Barcha ma'lumot turlari mumkun
+
+36. Quyidagi kod nima natija chiqaradi? [ int x = 2; switch (x) { case 1: cout << "One"; case 2: cout << "Two"; case 3: cout << "Three"; default: cout << "Other"; } ]
+a) Two
+b) *TwoThreeOther
+c) TwoOther
+d) Other
+
+37. Quyidagi funksiyada xatolik bormi? [ int calculate(int x) { if (x > 0) { return x * 2;} }
+a) Yo'q, to'g'ri
+b) *Ha, barch xolatlarga mos return bo'lishi kerak
+c) Ha, void bo'lishi kerak
+d) Ha, parametr noto'g'ri
+
+38. Quyidagi kod bajarilganda nima natija chiqadi? [ int x = 5; if (x > 3 && x < 10) { cout << "A"; } else if (x >= 5) { cout << "B"; } else { cout << "C"; }
+a) AB
+b) B
+c) *A
+d) C
+
+39. Quyidagi dastur natijasini toping? [ bool isPositive(int n) { return n > 0; } int main() { if (isPositive(-5)) { cout << "Yes";} } ]
+a) Xatolik beradi
+b) "Yes" chiqaradi
+c) *Hech narsa chiqarmaydi
+d) True chiqaradi
+
+40. Quyidagi kod nima chiqaradi? [ int x = 7; if (x % 2 == 0) cout << "Even"; else cout << "Odd"; ]
+a) Even
+b) *Odd
+c) 7
+d) 1
+
+41. Switch statementda default qayerda bo'lishi mumkin?
+a) Faqat oxirida
+b) Faqat boshida
+c) *Istalgan joyda
+d) case lardan oldin
+
+42. Quyidagi funksiya nima qaytaradi? [ int func(int x) { if (x < 0) return -1; else if (x == 0) return 0; else return 1; } int result = func(0); ]
+a) -1
+b) *0
+c) 1
+d) Xatolik
+
+43. Quyidagi kod bajarilganda nima natija chiqadi? [ int x = 3; if (x > 5); cout << "Hello"; ] 
+a) Hech narsa
+b) *Hello
+c) Xatolik
+d) 3
+
+44. Quyidagi switch statementda nima chiqadi? [ char grade = 'B'; switch (grade) { case 'A': cout << "Excellent"; break; case 'B': cout << "Good"; break; case 'C': cout << "Fair"; break; default: cout << "Poor";} ]
+a) Excellent
+b) *Good
+c) Fair
+d) Poor
+
+45. Quyidagi funksiyada mantiqiy xatolik bormi? [ int divide(int a, int b) { if (b != 0) { return a / b; } return 0; }
+a) *Yo'q, to'g'ri ishlaydi
+b) Ha, else kerak
+c) Ha, void bo'lishi kerak
+d) Ha, b == 0 bo'lishi kerak
+
+46. Quyidagi kod nima chiqaradi? [ int x = 10; if (x > 5) { if (x > 15) { cout << "A"; } else { cout << "B"; } ]
+a) A
+b) *B
+c) AB
+d) Hech narsa
+
+47. Quyidagi funksiya qanday qiymat qaytaradi? [ double getAverage(int a, int b) { return (a + b) / 2; } double result = getAverage(5, 6); ]
+a) 5.5
+b) 6.0
+c) *5.0
+d) 11.0
+
+48.switch statementda break ning vazifasi nima?
+a) Dasturni to'xtatadi
+b) *Keyingi case larni o'tkazib yuboradi
+c) Switch dan chiqadi va dasturni tugatadi
+d) Xatolik beradi
+
+49. Quyidagi kod bajarilganda nima chiqadi? [ int x = 4; if (x > 2 || x < 1)  { cout << "True"; }  { else cout << "False"; } ]
+a) False
+b) *True
+c) Xatolik
+d) 4
+
+50. Quyidagi funksiya nima qaytaradi? [ int mystery(int n) { if (n <= 1) { return 1; } return n; } int result = mystery(0); ]
+a) 0
+b) *1
+c) -1
+d) Xatolik
+
+51. Quyidagi kod bajarilganda x ning qiymati nima bo'ladi? [ int x = 3.7; ] 
+a) 3.7
+b) 4
+c) *3
+d) Xatolik
+
+52. Quyidagi kodda qanday konversiya sodir bo'ladi? double d = 5;
+a) Narrow casting
+b) *Implicit widening conversion yani ma'lumot qo'shiladi
+c) Explicit casting
+d) Xatolik
+
+53. Quyidagi kod bajarilganda result ning qiymati qanday? [ int a = 10; double b = 3.0; double result = a / b; ]
+a) 3
+b) *3.333...
+c) 3.0
+d) 10
+
+54. Quyidagi narrow casting da ma'lumot yo'qolishi mumkinmi? [ double x = 99.9; int y = x; ]
+a) Yo'q
+b) *Ha, kasr qism yo'qoladi
+c) Faqat manfiy sonlarda
+d) Hech qachon
+
+55. Quyidagi kod bajarilganda c ning qiymati nima? [ char c = 300; ] 
+a) 300
+b) *44
+c) 0
+d) Xatolik
+
+56. Quyidagi ifodada ma'lumot turi qaysi biriga ozgaradi? [ int x = 5; double y = x + 2.5; ]
+a) int ga 
+b) *double ga
+c) char ga
+d) o'zgarish yo'q
+
+57. Quyidagi kod bajarilganda result ning qiymati qanday? [ int a = 7; int b = 2; double result = a / b; ]
+a) 3.5
+b) 4.0
+c) *3.0
+d) 3
+
+58. Quyidagi narrow casting to'g'ri bajarilganmi? [ double x = 5.9; int y = (int)x; ]
+a) Yo'q, xatolik
+b) *Ha, y = 5
+c) Ha, y = 6
+d) Ha, y = 5.9
+
+59. Quyidagi kod bajarilganda x ning qiymati? [ float x = 10 / 4; ]
+a) 2.5
+b) 3.0
+c) *2.0
+d) 2.25
+
+60. Quyidagi ifodada qaysi ma'lumot turiga konversiya bo'ladi? [ int a = 5; float b = 2.5; double c = 1.0; auto result = a + b + c; ]
+a) int
+b) float
+c) *double
+d) auto
+
+61. Quyidagi kod bajarilganda x ning qiymati nima bo'ladi? [ void change(int x) { x = 10; } int main() { int x = 5; change(x); cout << x; }
+a) 10
+b) *5
+c) 15
+d) Xatolik
+
+62. Quyidagi kodda scope xatoligi bormi? [ void func() { int x = 5; } int main() { cout << x; } ]
+a) Yo'q, x = 5 chiqadi
+b) *Ha, x funksiya tashqarisida ko'rinmaydi
+c) Yo'q, x = 0 chiqadi
+d) Ha, func() chaqirilmagan
+
+63. Forward declaration qachon kerak bo'ladi?
+a) Hech qachon
+b) Har doim
+c) *Funksiya ishlatilishidan oldin e'lon qilinmagan bo'lsa
+d) Faqat void funksiyalar uchun
+
+64. Quyidagi kod to'g'ri ishlaydimi? [ int add(int, int);  int main() { int result = add(5, 3); } int add(int a, int b) { return a + b; } ]
+a) Yo'q, xatolik
+b) *Ha, to'g'ri ishlaydi
+c) Faqat parametr nomlari bo'lsa
+d) Yo'q, forward declaration noto'g'ri
+
+65. Quyidagi kodda nechta alohida x o'zgaruvchisi mavjud? [ int x = 10; void func(int x) { int x = 5; } ]
+a) 1
+b) 2
+c) *bir xil nomli o'zgaruvchi
+d) 3
+
+66. Quyidagi kod bajarilganda nima chiqadi? [ void print(int a, int b = 5) { cout << a + b; } int main() { print(10); } ]
+a) 10
+b) 5
+c) *15
+d) Xatolik
+
+67. Quyidagi kodda qaysi x ishlaydi? [ int x = 1; void func() { int x = 2; cout << x; } int main() { func(); } ]
+a) 1
+b) *2
+c) 3
+d) Xatolik
+
+68. Quyidagi forward declaration to'g'rimi? [ void calculate(int a, int b); void calculate(int x, int y) { cout << x + y; } ]
+a) Yo'q, parametr nomlari bir xil bo'lishi kerak
+b) *Ha, parametr nomlari farq qilishi mumkin
+c) Yo'q, return turi noto'g'ri
+d) Yo'q, void bo'lmasligi kerak
+
+69. Quyidagi kod bajarilganda result ning qiymati nima? [ int multiply(int a, int b = 2, int c = 3) { return a * b * c; } int main() { int result = multiply(5, 4); } ]
+a) 40
+b) 20
+c) *60
+d) 30
+
+70. Quyidagi kodda scope muammosi bormi? [ void outer() { int x = 5; { int x = 10; cout << x; } cout << x; } ]
+a) *Yo'q, 10 va 5 chiqadi
+b) Ha, bir xil nom ishlatilgan
+c) Yo'q, 5 va 5 chiqadi
+d) Ha, block scope ishlamaydi
+
+71. Quyidagi kod necha marta "Hello" so'zini chiqaradi? [ int i = 0; while (i < 3) { cout << "Hello"; i++; }
+a) 2
+b) *3
+c) 4
+d) Cheksiz
+
+72. Quyidagi kod bajarilgandan keyin x ning qiymati nima bo'ladi? [ int x = 10; while (x > 5) { x--; } ]
+a) 6
+b) 4
+c) *5
+d) 0
+
+73. Quyidagi while loop nima chiqaradi? [ int i = 1; while (i <= 5) { cout << i << " "; i += 2; } ]
+a) 1 2 3 4 5
+b) *1 3 5
+c) 2 4
+d) 1 3 5 7
+
+74. Quyidagi kodda qanday muammo bor? [ int i = 5; while (i > 0) { cout << i; } ]
+a) *Cheksiz loop - i o'zgarmaydi
+b) Xatolik beradi
+c) Hech narsa chiqarmaydi
+d) Muammo yo'q
+
+75. Quyidagi kod necha marta bajariladi? [ int count = 0; while (count < 10) { count += 2; }]
+a) 10
+b) *5
+c) 6
+d) 4
+
+76. Quyidagi kod bajarilganda nima chiqadi? [ int x = 0; while (x < 3) { x++; cout << x; } ]
+a) 0 1 2
+b) *1 2 3
+c) 1 2
+d) 0 1 2 3
+
+77. Quyidagi while loop necha marta ishlaydi? [ int i = 10; while (i >= 10) { i--; } ]
+a) 0
+b) *1
+c) 10
+d) 9
+
+78. Quyidagi kod bajarilganda sum ning qiymati nima bo'ladi? [ int sum = 0; int i = 1; while (i <= 4) { sum += i; i++; }
+a) 4
+b) *10
+c) 5
+d) 15
+
+79. Quyidagi kodda mantiqiy xatolik bormi? [ int x = 5; while (x = 0) { cout << "Test"; }
+a) Yo'q, 5 marta ishlaydi
+b) Yo'q, cheksiz ishlaydi
+c) *Ha, shart noto'g'ri
+d) Ha, x-- bo'lishi kerak
+
+80. Quyidagi kod nima chiqaradi? [ int i = 0; while (i < 5) { if (i == 2) { i++; continue; }  cout << i << " "; i++; } ]
+a) 0 1 2 3 4
+b) *0 1 3 4
+c) 0 1 4
+d) 0 1 2
+
+81. Quyidagi kod necha marta "Hello" so'zini chiqaradi? [ for (int i = 0; i < 5; i++) { cout << "Hello"; } ]
+a) 4
+b) *5
+c) 6
+d) Cheksiz
+
+82. Quyidagi kod bajarilganda nima chiqadi? [ for (int i = 1; i <= 10; i += 3) { cout << i << " "; } ]
+a) 1 4 7 10
+b) 1 4 7 11
+c) *1 4 7 10
+d) 1 3 5 7 9
+
+83. Quyidagi for loop necha marta ishlaydi? [ for (int i = 10; i > 5; i--) { cout << i; } ]
+a) 4
+b) *5
+c) 6
+d) 10
+
+84. Quyidagi kod bajarilganda sum ning qiymati nima bo'ladi? [ int sum = 0; for (int i = 1; i <= 5; i++) { sum += i; } ]
+a) 10
+b) 14
+c) *15
+d) 5
+
+85. Quyidagi kodda qanday xatolik bor? [ for (int i = 0; i < 10; i--) { cout << i; } ]
+a) Xatolik yo'q
+b) Cheksiz loop - i kopayadi
+c) *Cheksiz loop - i kamayadi
+d) Cheksiz loop - i ozgarmaydi
+
+86. Quyidagi kod nima chiqaradi? [ for (int i = 0; i < 3; i++) { cout << i * 2 << " "; } ]
+a) 0 1 2
+b) *0 2 4
+c) 2 4 6
+d) 0 3 6
+
+87. Quyidagi for loop necha marta bajariladi? [ for (int i = 5; i <= 5; i++) { cout << "Test"; } ]
+a) 0
+b) *1
+c) 5
+d) Cheksiz
+
+88. Quyidagi kod bajarilganda nima chiqadi? [ for (int i = 0; i < 6; i++) { if (i % 2 == 0) cout << i << " "; } ]
+a) 1 3 5
+b) *0 2 4
+c) 2 4 6
+d) 0 2 4 6
+
+89. Quyidagi kodda mantiqiy xatolik bormi? [ for (int i = 1; i < 10; i++) { if (i == 5) break; cout << i << " "; } ]
+a) Ha, break ishlatilgan
+b) *Yo'q, 1 2 3 4 chiqaradi
+c) Ha, i <= 10 bo'lishi kerak
+d) Yo'q, 1 2 3 4 5 chiqaradi
+
+90. Quyidagi kod bajarilgandan keyin count ning qiymati nima? [ int count = 0; for (int i = 0; i < 8; i += 2) { count++; } ]
+a) 8
+b) *4
+c) 3
+d) 5
+
+91. C++ dasturlash tilida kompilyator nima qiladi?
+a) Dasturni ishga tushiradi
+b) *Manba kodini mashin kodiga aylantiradi
+c) Xatolarni tuzatadi
+d) Fayllarni saqlaydi
+
+92. C++ da o'zgaruvchi e'lon qilishdan maqsad nima?
+a) Qiymat berish
+b) *Xotirada joy ajratish
+c) Dasturni tezlashtirish
+d) Faylga yozish
+
+93. Quyidagilardan qaysi biri C++ da reserved keyword (zaxiralangan kalit so'z)?
+a) myVariable
+b) number
+c) *while
+d) count
+
+94. C++ da main() funksiyasining roli nima?
+a) Dasturni saqlaydi
+b) *Dastur bajarilishi boshlanadigan joy
+c) Xatolarni tekshiradi
+d) Fayllarni ochadi
+
+95. Kompilyatsiya va bajarilish (compilation vs execution) orasidagi farq nima?
+a) Farq yo'q
+b) Kompilyatsiya tezroq
+c) *Kompilyatsiya - tarjima, bajarilish - ishga tushirish
+d) Kompilyatsiya - ishga tushirish, bajarilish - tarjima
+
+96. C++ da sintaksis xatoligi (syntax error) qachon aniqlanadi?
+a) Dastur ishga tushganda
+b) *Kompilyatsiya paytida
+c) Faylni saqlaganda
+d) Hech qachon
+
+97. C++ da library nima?
+a) Kitoblar to'plami
+b) *Tayyor funksiyalar va kodlar to'plami
+c) Fayllar papkasi
+d) O'zgaruvchilar to'plami
+
+98. Header file (#include) ning vazifasi nima?
+a) Dasturni tezlashtiradi
+b) Xatolarni to'g'rilaydi
+c) *Boshqa fayllardan kod qo'shadi
+d) Dasturni tugatadi
+
+99. C++ da identifier (identifikator) deb nimaga aytiladi?
+a) Raqamlar
+b) *O'zgaruvchi, funksiya nomlari
+c) Operatorlar
+d) Qavslar
+
+100. Statik tipizatsiya (static typing) deganda nima tushuniladi?
+a) O'zgarmas qiymatlar
+b) *O'zgaruvchi turi oldindan belgilanadi
+c) Faqat static o'zgaruvchilar
+d) Tiplarni o'zgartirish mumkin emas

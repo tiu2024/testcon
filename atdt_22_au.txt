@@ -1,0 +1,299 @@
+1. C dasturlash tili bo'yicha int ma'lumot turi qanday qiymatlarni saqlaydi?
+a) Faqat musbat butun sonlar
+b) * Butun sonlar (musbat va manfiy)
+c) Faqat 0 dan 100 gacha sonlar
+d) O'nlik kasrli sonlar
+
+2. Arduino-da LED yoritgich yoqish uchun qaysi funksiya ishlatiladi?
+a) ledOn()
+b) turnOn()
+c) * digitalWrite()
+d) setLED()
+
+3. Quyidagi oddiy kod qanday natija beradi?{ int x = 5; int y = 3; int z = x + y;}
+a) z = 2
+b) z = 15
+c) * z = 8
+d) z = 53
+
+4. Elektr zanjirida kuchlanish qaysi birlikda o'lchanadi?
+a) Amper
+b) Om
+c) Vatt
+d) * Volt
+
+5. C dasturida o'zgaruvchi e'lon qilishda qaysi tartib to'g'ri?
+a) * int yosh;
+b) yosh int;
+c) integer yosh;
+d) var yosh;
+
+6. Arduino-da analogli pin qiymatini o'qish uchun qaysi funksiya ishlatiladi?
+a) readAnalog()
+b) getAnalog()
+c) * analogRead()
+d) pinRead()
+
+7. Rezistor nima uchun ishlatiladi?
+a) Kuchlanishni oshirish uchun
+b) * Tok oqimini cheklash uchun
+c) Energiya saqlash uchun
+d) Signalni kuchaytirish uchun
+
+8. C dasturida shartli operator qaysi kalit so'z bilan boshlanadi?
+a) when
+b) check
+c) * if
+d) condition
+
+9. Arduino-da pinni chiqish rejimiga o'rnatish uchun qaysi funksiya ishlatiladi?
+a) setOutput()
+b) * pinMode()
+c) configPin()
+d) outputMode()
+
+10. Quyidagi shartli kod qanday ishlaydi? if (5 > 3) { printf("To'g'ri");}
+a) Hech narsa chiqarmaydi
+b) Xatolik beradi
+c) * "To'g'ri" so'zini chiqaradi
+d) 5 sonini chiqaradi
+
+11. Elektr zanjirida tok qanday belgilanadi?
+a) V
+b) R
+c) * I
+d) P
+
+12. C dasturida while sikl qachon to'xtaydi?
+a) 10 marta takrorlanganda
+b) * Shart noto'g'ri bo'lganda
+c) Foydalanuvchi to'xtatganda
+d) Xotirada joy tugaganda
+
+13. Arduino-da digital pin qiymatini HIGH qilish nimani anglatadi?
+a) Pinni o'chirish
+b) Pinni o'qish
+c) * Pinga 5V kuchlanish berish
+d) Pinni kirish rejimiga o'tkazish
+
+14. float ma'lumot turi qanday qiymatlarni saqlaydi?
+a) Faqat butun sonlar
+b) Faqat musbat sonlar
+c) * O'nlik kasrli sonlar
+d) Matnli ma'lumotlar
+
+15. Quyidagi for tsikkli dasturi nima qiladi? for(int i=0; i<5; i++) { printf("%d ", i); }
+a) 1 2 3 4 5 sonlarini chiqaradi
+b) * 0 1 2 3 4 sonlarini chiqaradi
+c) 5 marta 5 sonini chiqaradi
+d) Cheksiz sikl hosil qiladi
+
+16. Rezistorning qarshiligi qaysi birlikda o'lchanadi?
+a) Volt
+b) Amper
+c) * Om
+d) Vatt
+
+17. C dasturida printf() funksiyasi nima uchun ishlatiladi?
+a) Ma'lumot o'qish uchun
+b) * Ekranga ma'lumot chiqarish uchun
+c) O'zgaruvchi yaratish uchun
+d) Dasturni to'xtatish uchun
+
+18. Arduino-da delay() funksiyasi nima qiladi?
+a) Dasturni to'xtatadi
+b) * Ma'lum vaqt kutadi (millisekundlarda)
+c) Pin qiymatini o'qiydi
+d) Xotirani tozalaydi
+
+19. Quyidagi qaysi operator taqqoslash operatori hisoblanadi?
+a) * ==
+b) =
+c) +=
+d) &&
+
+20. Elektr zanjirida parallel ulanish nima?
+a) Elementlar ketma-ket ulanadi
+b) * Elementlar bir xil nuqtalarga ulanadi
+c) Faqat bitta element bo'ladi
+d) Elementlar o'zaro ta'sirlashmaydi
+
+21. Quyidagi kod qanday natija beradi? int arr[3] = {10, 20, 30}; printf("%d", arr[1]);
+a) 10
+b) * 20
+c) 30
+d) 1
+
+22. Arduino-da analogWrite() funksiyasi qanday ishlaydi?
+a) Analogli qiymatni o'qiydi
+b) * PWM signal orqali "analogli" chiqish hosil qiladi
+c) Pinni analogli rejimga o'tkazadi
+d) 0 yoki 1 qiymat yozadi
+
+23. Om qonuniga ko'ra, qarshilik qanday hisoblanadi?
+a) I = V * R
+b) R = I * V
+c) * R = V / I
+d) R = V + I
+
+24. Quyidagi tsikll dasturi nima chiqaradi? int x = 10; while(x > 7) { printf("%d ", x); x--; }
+a) 10 9 8 1
+b) 10 9 8 7 6 5 4 3 2 1
+c) * 10 9 8
+d) 7 8 9 10
+
+25. C dasturida scanf() funksiyasi nima uchun ishlatiladi?
+a) Ekranga chiqarish uchun
+b) * Foydalanuvchidan ma'lumot olish uchun
+c) Fayl ochish uchun
+d) Dasturni to'xtatish uchun
+
+26. Arduino-da LCD displey bilan ishlash uchun avval nima qilish kerak?
+a) Pinlarni o'qish
+b) LED yoqish
+c) * Kutubxonani ulash va LCD obyektini yaratish
+d) Serial portni ochish
+
+27. Parallel ulangan 2 ta 100 Om rezistorning umumiy qarshiligi qancha?
+a) 200 Om
+b) 100 Om
+c) * 50 Om
+d) 150 Om
+
+28. Berilgam dastur qanday ishlaydi? char str[] = "Arduino"; printf("%c", str[0]);
+a) "Arduino" so'zini chiqaradi
+b) * 'A' harfini chiqaradi
+c) 0 sonini chiqaradi
+d) Xatolik beradi
+
+29. Arduino-da Serial.begin(9600) nima uchun ishlatiladi?
+a) 9600 marta sikl yaratadi
+b) * Serial aloqani 9600 baud tezlikda boshlaydi
+c) 9600 pinni faollashtiradi
+d) 9600 ms kutadi
+
+30. C dasturida && operatori nimani anglatadi?
+a) Yoki
+b) * Va (AND)
+c) Teng
+d) Qo'shish
+
+31. Quyidagi kod xatolikka ega. Nima sababdan? int x = 5; if (x = 3) { printf("Test"); }
+a) printf noto'g'ri yozilgan
+b) * = o'rnida == ishlatilishi kerak
+c) x o'zgaruvchi e'lon qilinmagan
+d) Hech qanday xatolik yo'q
+
+32. Arduino-da ultrasonic sensor masofa o'lchashda qaysi printsipdan foydalanadi?
+a) Yorug'lik tezligi
+b) * Tovush to'lqinining qaytish vaqti
+c) Magnit maydon
+d) Issiqlik o'lchash
+
+33. Ketma-ket ulangan 3 ta 10 Om rezistorning umumiy qarshiligi qancha?
+a) 10 Om
+b) 3.33 Om
+c) 13 Om
+d) * 30 Om
+
+34. Quyidagi kod necha marta "Hello" so'zini chiqaradi? for(int i=1; i<=3; i++) { for(int j=1; j<=2; j++) { printf("Hello "); } }
+a) 3
+b) 5
+c) * 6
+d) 2
+
+35. C dasturida massivning indeksi qaysi raqamdan boshlanadi?
+a) 1
+b) * 0
+c) -1
+d) 10
+
+36. Arduino-da pinMode() funksiyasida qaysi parametrlar ishlatiladi?
+a) Faqat pin raqami
+b) * Pin raqami va rejim (INPUT yoki OUTPUT)
+c) Pin raqami va qiymat
+d) Pin raqami va vaqt
+
+37. Kuchlanish bo'luvchi sxemasida 2 ta rezistor ishtirok etadi. Agar R1=100Om, R2=200Om va umumiy kuchlanish 9V bo'lsa, R2 dagi kuchlanish qancha?
+a) 3V
+b) 4.5V
+c) * 6V
+d) 9V
+
+38. Quyidagi funksiya chaqiruvi qanday natija beradi? int sum(int a, int b) { return a + b; } int result = sum(5, 7);
+a) result = 57
+b) result = 12.0
+c) * result = 12
+d) Xatolik beradi
+
+39. Arduino-da digitalRead() funksiyasi qanday qiymat qaytaradi?
+a) 0 dan 1023 gacha
+b) * HIGH yoki LOW
+c) 0 dan 255 gacha
+d) true yoki false
+
+40. C dasturida || operatori nimani anglatadi?
+a) Va (AND)
+b) * Yoki (OR)
+c) Teng emas
+d) Bo'lish
+
+41. Quyidagi kod nima chiqaradi? int x = 5; if(x > 3 && x < 10) { printf("To'g'ri"); } else { printf("Noto'g'ri"); }
+a) Hech narsa
+b) Noto'g'ri
+c) * To'g'ri
+d) Xatolik
+
+42. Arduino-da analogRead() qanday qiymat qaytaradi?
+a) 0 yoki 1
+b) 0 dan 255 gacha
+c) * 0 dan 1023 gacha
+d) HIGH yoki LOW
+
+43. Quyidagi kod nima uchun xato? int numbers[3]; numbers[3] = 5;
+a) Massiv e'lon qilinmagan
+b) * Indeks chegaradan tashqarida (0-2 bo'lishi kerak)
+c) Qiymat noto'g'ri
+d) Hech qanday xatolik yo'q
+
+44. Elektr quvvat qanday formulada hisoblanadi?
+a) P = I / V
+b) P = V / I
+c) * P = V * I
+d) P = R * I
+
+45. Arduino-da LED porlash dasturini yozishda eng kamida qancha funksiya kerak?
+a) Faqat digitalWrite()
+b) * digitalWrite() va delay()
+c) pinMode(), digitalWrite(), analogRead()
+d) setup(), loop(), Serial.begin()
+
+46. Quyidagi kod qanday ishlaydi? char c = 'A'; c = c + 1; printf("%c", c);
+a) 'A' chiqaradi
+b) * 'B' chiqaradi
+c) 1 sonini chiqaradi
+d) Xatolik beradi
+
+47. C dasturida break operatori nima uchun ishlatiladi?
+a) Dasturni to'liq to'xtatish uchun
+b) * Sikldan chiqish uchun
+c) Funksiya yaratish uchun
+d) O'zgaruvchi e'lon qilish uchun
+
+48. Arduino-da pull-up rezistor nima uchun kerak?
+a) LED yorug'ligini oshirish uchun
+b) * Tugmachalar bilan ishlashda aniq signal olish uchun
+c) Batareya quvvatini tejash uchun
+d) Tezlikni oshirish uchun
+
+49. Quyidagi kod nima qiladi? int x = 10; x += 5; printf("%d", x);
+a) 10 chiqaradi
+b) 5 chiqaradi
+c) * 15 chiqaradi
+d) 105 chiqaradi
+
+50. Arduino-da tone() funksiyasi nima uchun ishlatiladi?
+a) Ekran rangini o'zgartirish uchun
+b) * Buzzer orqali tovush chiqarish uchun
+c) LED porlashini sozlash uchun
+d) Haroratni o'lchash uchun
