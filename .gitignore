@@ -134,6 +134,8 @@ venv.bak/
 .cursor/
 .cursor
 
+quiz_output
+
 # Spyder project settings
 .spyderproject
 .spyproject
