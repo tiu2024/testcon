@@ -1,13 +1,17 @@
 """Parsers for reading quiz questions from various text formats.
 
-Three input formats are supported:
+Four input formats are supported:
     1. Original  — numbered/unnumbered questions with lettered options
     2. Hemis     — brace-wrapped, ====/+++++ separated
     3. Continuous — ++++ separated, options use continuously incrementing letters
+    4. Table doc  — Word .docx with one bordered table per question
 """
 
+import random
 import re
 from pathlib import Path
+
+from docx import Document
 
 from models import Option, Question
 
@@ -167,6 +171,51 @@ def parse_continuous(filepath: Path) -> list[Question]:
         options = [
             Option(letter=LETTERS[i], text=o["text"], is_correct=o["is_correct"])
             for i, o in enumerate(raw_options)
+        ]
+
+        questions.append(Question(
+            number=len(questions) + 1,
+            text=question_text,
+            options=options,
+        ))
+
+    return questions
+
+
+# ---------------------------------------------------------------------------
+# Table doc format  (Word .docx, one single-column table per question)
+# ---------------------------------------------------------------------------
+
+def parse_table_doc(filepath: Path) -> list[Question]:
+    """Parse a Word .docx produced by write_table_doc() back to questions.
+
+    Each table has:
+      row 0 → question text
+      row 1 → correct answer text
+      row 2+ → incorrect answer texts
+    """
+    doc = Document(filepath)
+    questions: list[Question] = []
+
+    for table in doc.tables:
+        if len(table.rows) < 2:
+            continue
+
+        question_text = table.rows[0].cells[0].text.strip()
+        correct_text = table.rows[1].cells[0].text.strip()
+        if not question_text or not correct_text:
+            continue
+
+        texts = [correct_text] + [
+            row.cells[0].text.strip()
+            for row in table.rows[2:]
+            if row.cells[0].text.strip()
+        ]
+        random.shuffle(texts)
+        options = [
+            Option(letter=LETTERS[i], text=text, is_correct=(text == correct_text))
+            for i, text in enumerate(texts)
+            if i < len(LETTERS)
         ]
 
         questions.append(Question(

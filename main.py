@@ -5,7 +5,7 @@ import argparse
 import sys
 from pathlib import Path
 
-from parser import parse_original, parse_hemis, parse_continuous
+from parser import parse_original, parse_hemis, parse_continuous, parse_table_doc
 from writers import (
     write_table_doc,
     write_hemis_text,
@@ -14,7 +14,7 @@ from writers import (
     write_original_text,
 )
 
-OUTPUT_DIR = Path("quiz_output")
+OUTPUT_ROOT = Path("output")
 
 # (writer_function, file_suffix)
 _EXPORT_FORMATS = {
@@ -47,6 +47,7 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     convert.add_argument("--from-hemis",      action="store_true", help="Hemis → original text")
     convert.add_argument("--from-continuous",  action="store_true", help="Continuous → original text")
+    convert.add_argument("--from-table",       action="store_true", help="Table .docx → original text")
 
     return p
 
@@ -59,21 +60,27 @@ def main(argv: list[str] | None = None) -> None:
         print(f"Error: '{input_path}' not found.", file=sys.stderr)
         sys.exit(1)
 
-    OUTPUT_DIR.mkdir(exist_ok=True)
     base_name = input_path.stem
+    output_dir = OUTPUT_ROOT / base_name
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-    # --- Reverse conversions (hemis/continuous → original) -----------------
-    if args.from_hemis or args.from_continuous:
-        parser_fn = parse_hemis if args.from_hemis else parse_continuous
+    # --- Reverse conversions (hemis/continuous/table → original) -----------
+    if args.from_hemis or args.from_continuous or args.from_table:
+        if args.from_hemis:
+            parser_fn = parse_hemis
+        elif args.from_continuous:
+            parser_fn = parse_continuous
+        else:
+            parser_fn = parse_table_doc
         questions = parser_fn(input_path)
 
         if not questions:
             print("No questions found in the input file.", file=sys.stderr)
             sys.exit(1)
 
-        out_path = OUTPUT_DIR / f"{base_name}_original.txt"
+        out_path = output_dir / f"{base_name}_original.txt"
         write_original_text(questions, out_path)
-        print(f"Parsed {len(questions)} question(s) → {out_path}")
+        print(f"Parsed {len(questions)} question(s) -> {out_path}")
         return
 
     # --- Forward conversion (original → export formats) --------------------
@@ -90,7 +97,7 @@ def main(argv: list[str] | None = None) -> None:
 
     for name in sorted(selected):
         writer_fn, suffix = _EXPORT_FORMATS[name]
-        out_path = OUTPUT_DIR / f"{base_name}{suffix}"
+        out_path = output_dir / f"{base_name}{suffix}"
         writer_fn(questions, out_path)
         print(f"  Created: {out_path}")
 
