@@ -100,7 +100,7 @@ def parse_hemis(filepath: Path) -> list[Question]:
         if not block:
             continue
 
-        parts = [p.strip() for p in re.split(r"\n[ \t]*====[ \t]*\n", block) if p.strip()]
+        parts = [p.strip() for p in re.split(r"\n[ \t]*={4,5}[ \t]*\n", block) if p.strip()]
         if not parts:
             continue
 
